@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+
+
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<main id="main">
+
+    <section class="section">
+
+        <div class="img-logo mt-10">
+            <img class="block mx-auto" src="img/Money Master💰.png" alt="">
+        </div>
+
+        <div class="main-content  grid grid-cols-2 gap-4 w-3/4 mt-10 mx-auto">
+
+            <div class="img grid-cols-7">
+                <img src="img/Pexels Photo by Karolina Grabowska.png" alt="">
+            </div>
+
+            <div class="calculations bg-red-100 py-6 grid-cols-5 mx-auto text-center w-3/4">
+
+                <div class="income">
+                    <h4 class="text-3xl font-medium mb-4 text-center">Income</h4>
+
+                    <!-- income input section -->
+                    <label for="" class="block"><span class="text-xl font-medium mr-2">Income :</span> <input
+                            type="text" id="total-income"
+                            class="bg-white text-black font-medium w-64 py-1.5 px-1 rounded focus:outline-none">
+                    </label>
+                </div>
+
+                <!-- expences section -->
+                <div class="expences mt-10">
+
+                    <h4 class="text-3xl font-medium mb-4 text-center">Expences</h4>
+                    <label for="" class="block mt-5"><span class="text-xl font-medium mr-2">Food :</span> <input
+                            type="text" name="" id="food-expence"
+                            class="bg-white text-black font-medium w-64 py-1.5 px-1 rounded focus:outline-none">
+                    </label>
+
+                    <label for="" class="block mt-5"><span class="text-xl font-medium mr-2">Rent :</span> <input
+                            type="text" name="" id="rent-expence"
+                            class="bg-white text-black font-medium w-64 py-1.5 px-1 rounded focus:outline-none">
+                    </label>
+
+                    <label for="" class="block mt-5"><span class="text-xl font-medium mr-2">Clothes :</span> <input
+                            type="text" name="" id="clothing-expence"
+                            class="bg-white text-black font-medium w-64 py-1.5 px-1 rounded focus:outline-none">
+                    </label>
+
+                    <!-- expence calculator here -->
+                    <button id="total-expences"
+                        class="text-xl font-medium text-white rounded py-2 px-8 mt-6 bg-blue-400 hover:bg-blue-700">Calculate</button>
+
+                    <!-- expence calculator section ended -->
+
+                    <div class="calculations-after-expence mt-10">
+                        <h2 class="text-3xl font-medium mb-4 text-center">Total Expences : <span
+                                id="total-expence"></span></h2>
+                        <h2 class="text-3xl font-medium mb-4 text-center">Balance : <span id="balance"></span></h2>
+                    </div>
+
+                </div>
+
+                <!-- saving section -->
+                <div class="savings">
+
+                    <div class="saving-amount">
+                        <label for="" class="text-2xl font-medium mb-4 text-center">Save : <input class="w-24 bg-white"
+                                type="text" name="" id="saving-percent"> % <button id="savings"
+                                class="text-xl font-medium text-white rounded py-2 px-8 mt-6 bg-blue-400 hover:bg-blue-700">Save</button></label>
+                    </div>
+                    <div class="remaing-balance mt-6">
+                        <h2 class="text-2xl font-medium mb-4 text-center">Saving Amount : <span
+                                id="saved-amount"></span></h2>
+                        <h2 class="text-2xl font-medium mb-4 text-center">Remaining Balance : <span
+                                id="balance-after-every-expence"></span>
+                        </h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="income-calculations.js"></script>
+
+</body>
+
+</html>
